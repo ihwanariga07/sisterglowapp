@@ -1,4 +1,4 @@
-@extends('layouts.template')
+@extends('layout.master')
 @section('title')
     Halaman Dashboard
 @endsection
@@ -30,7 +30,7 @@
         </div>
 @endsection
 
-{{-- @extends('layouts.app')
+{{-- @extends('layout.master')
 
 @section('content')
 <div class="container">
