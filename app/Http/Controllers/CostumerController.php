@@ -9,10 +9,12 @@ class CostumerController extends Controller
   
     public function index()
     {
+        $data_costumers = \App\Models\Costumer::all();
+    return view('costumers.index', compact('data_costumers'));
         
     }
 
- 
+
     public function create()
     {
         

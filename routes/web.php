@@ -31,3 +31,4 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 // Route::get('/costumers', [karyawanController::class, 'index']);
 
 Route::resource('customers', CustomerController::class);
+Route::get('/costumers', [CustomerController::class, 'index'])->name('costumers.index');
