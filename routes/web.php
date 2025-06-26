@@ -16,5 +16,5 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::resource('customers', CustomerController::class);
-Route::get('/costumers', [CustomerController::class, 'index'])->name('costumers.index');
+Route::resource('customers', CostumerController::class);
+Route::get('/costumers', [CostumerController::class, 'index'])->name('costumers.index');
