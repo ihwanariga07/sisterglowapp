@@ -28,4 +28,6 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/costumers', [karyawanController::class, 'index']);
+// Route::get('/costumers', [karyawanController::class, 'index']);
+
+Route::resource('customers', CustomerController::class);
